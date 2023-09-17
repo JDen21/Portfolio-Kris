@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap');
+
+:root{
+    --color1: #13005A;
+    --color2: #00337C;
+    --color3: #1C82AD;
+    --color4: #F6F1F1;
+    --color5: #03C988;
+    --color6: #D9D9D9;
+}
+
+html, body{
+    border: none;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif; /* CALIBRI does not exist in google fonts 09-07-2023 */
+    font-size: 16px;
+}
+
+h1, h2, h3, h4 , h5{
+    padding: 0;
+    margin: 0;
+    font-family: 'Merriweather', serif;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 75px;
+    width: 100vw;
+    position: absolute;
+    box-shadow: 0px 3px 5px 0px rgba(156, 155, 155, 0.75);
+    -webkit-box-shadow: 0px 3px 5px 0px rgba(156, 155, 155, 0.75);
+    -moz-box-shadow: 0px 3px 5px 0px rgba(156, 155, 155, 0.75);
+}
+nav .shape-holder{
+    position: relative;
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+    width: 10%;
+    
+}
+nav .square{
+    background-color: var(--color1);
+    width: calc(0.01 * 100vw);
+    height: calc(0.01 * 100vw);
+}
+nav .circle{
+    background: rgb(19,0,90);
+    background: linear-gradient(90deg, rgba(19,0,90,1) 17%, rgba(28,130,173,1) 78%);
+    border-radius: 100%;
+    width: calc(0.01 * 100vw);
+    height: calc(0.01 * 100vw);
+}
+nav .triangle{
+    width: 0;
+    height: 0;
+    border-left: calc(0.005 * 100vw) solid transparent; /* Adjust size as needed */
+    border-right: calc(0.005 * 100vw) solid transparent; /* Adjust size as needed */
+    border-bottom: calc(0.01 * 100vw) solid var(--color3); /* Color of the triangle */
+}
+
+nav .options-holder{
+    display: flex;
+    column-gap: 24px;
+}
+nav .options-holder a{
+    color: var(--color1);
+    text-decoration: none;
+}
+
+section{
+    width: 100vw;
+    height: 100vh;
+}
+
+.section-1{
+    color: var(--color2);
+    display: flex;
+}
+
+.section-1 div{
+    width: 60%;
+}
+
+.section-1 .second-div img{
+    width: 90%;
+    min-width: 250px;
+    position: relative;
+    margin-top: calc(100vh * 0.25);
+    right: 75px;
+}
+
+.section-1 .second-div{
+    width: 40%;
+    display: flex;
+    flex-flow: column;
+    background-image: url('./img/bg_half.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section-1 .first-div{
+    width: 80%;
+    margin: auto;
+    margin-top: calc(100vh * 0.25);
+    position: relative;
+}
+
+.section-1 .text{
+    margin: 3px 0 0 0;
+    width: 100%;
+}
+.section-1 .text h1{
+    letter-spacing: 30px;
+    font-size: 5.5rem;
+    margin-bottom: 25%;
+    width: 75%;
+}
+
+
+.section-1 .text h1 p{
+    font-size: 1rem;
+    padding-top: 12px;
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+.section-1 .shape_1{
+    width: 30%;
+}
+.section-1 .text h1 span{
+    border-bottom: 1px solid var(--color1);
+    text-shadow: 0 1px 2px var(--color1);
+}
+
+/* switch */
+#switch-body{
+    width: 40px;
+    height: 20px;
+    border: 3px solid var(--color2);
+    border-radius: 15px;
+    position: relative;
+    cursor: pointer;
+}
+
+#switch-round{
+    width: 13px;
+    height: 13px;
+    background-color: var(--color2);
+    border: 2px solid white;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    transition: 0.25s; /* Add a smooth transition effect */
+}
+
+/* Style for the switch when it's in the 'on' state */
+.switch-on {
+    transform: translateX(20px);
+    /* left: 30px; */
+}
+
+/* section-2 */
+.section-2{
+    position: relative;
+    margin-top: 10%;
+    /* background-color: red; */
+}
+
+.section-2 .recenter{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    padding-top: 5%;
+}
+
+.section-2 .section-title{
+    letter-spacing: 12px;
+    font-size: 3rem;
+    position: absolute;
+    color: var(--color1);
+    margin-left: 12%;
+    margin-top: 12px;
+}
+
+.section-2 .window{
+    padding: 50px 40px 120px 40px;
+    display:inline-block;
+    background-color: rgb(28, 130, 173, 0.4);
+    border-top-right-radius: 125px;
+    border-top-left-radius: 125px;
+    padding-top: 75px;
+}
+
+.section-2 .second-div .about-me{
+    /* background-color: red; */
+    margin: 6% 0 2% 2%;
+    width: 70%;
+    color: var(--color1);
+}
+
+.section-2 .second-div .profile{
+    min-width: 650px;
+    min-height: 500px;
+    width: 75%;
+    height: 50%;
+    background-image: url('./img/shapes_2.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.section-3{
+    display: flex;
+    align-items: center;
+}
+
+.section-3 .first-div{
+    display: flex;
+    align-items: center;
+}
+
+.section-3 .title{
+    font-size: 1.5rem;
+    color: var(--color1);
+}
+
+.section-3 .message{
+    font-size: 1rem;
+    margin-top: 12px;
+    word-spacing: 12px;
+}
+
+.section-3 .button-holder{
+    text-align: right;
+    margin-bottom: 4%;
+}
+
+.section-3 button{
+    margin-top: 12px;
+    border-radius: 5px;
+    background-color: var(--color5);
+    border: none;
+    padding: 7px 12px;
+    font-size: 1.25rem;
+    box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.75);
+}
+
+.section-3 .sm-imgs{
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-3 .sm-img{
+    width: 49%;
+}
+
+.section-4{
+    display: flex;
+    align-items: center;
+}
+
+.section-4 .first-div img{
+    width: 100%;
+}
+
+
+.card{
+    width: 70%;
+    margin: auto;
+    min-width: 450px;
+    padding: 1%;
+    display: flex;
+    flex-flow: row;
+    column-gap: 12px;
+    background-color: var(--color6);
+}
+
+.section-4 .second-div, .section-4 .first-div{
+    width: 49%;
+}
+
+.section-4 .second-div h4{
+    color: #8C1D18;
+    font-size: 1.5rem;
+}
+
+
+.section-4 .message{
+    font-size: 1rem;
+    margin-top: 12px;
+    word-spacing: 12px;
+}
+
+.section-4 .button-holder{
+    text-align: right;
+    margin-bottom: 4%;
+}
+
+.section-4 button{
+    margin-top: 12px;
+    border-radius: 5px;
+    background-color: var(--color5);
+    border: none;
+    padding: 7px 12px;
+    font-size: 1.25rem;
+    box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.75);
+}

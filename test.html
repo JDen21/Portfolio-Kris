@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide Switch</title>
+    <style>
+        /* Style for the switch container */
+        .switch-container {
+            width: 60px;
+            height: 30px;
+            background-color: #ccc;
+            border-radius: 15px;
+            position: relative;
+            cursor: pointer;
+        }
+
+        /* Style for the switch circle (the knob) */
+        .switch-circle {
+            width: 30px;
+            height: 30px;
+            background-color: #fff;
+            border-radius: 50%;
+            position: absolute;
+            top: 0;
+            transition: 0.3s; /* Add a smooth transition effect */
+        }
+
+        /* Style for the switch when it's in the 'on' state */
+        .switch-on .switch-circle {
+            left: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="switch-container" onclick="toggleSwitch(this)">
+        <div class="switch-circle"></div>
+    </div>
+
+    <script>
+        function toggleSwitch(switchContainer) {
+            // Toggle the 'switch-on' class to change the switch's state
+            switchContainer.classList.toggle("switch-on");
+        }
+    </script>
+</body>
+</html>
