@@ -5,13 +5,13 @@ const screenSize = window.innerWidth
 const a = document.createElement('a')
 
 if(screenSize >= 1200){
-    a.href = '/lg.html'
+    a.href = '/Portfolio-Kris/lg.html'
 }
 else if(screenSize >= 992){
-    a.href = '/md.html'
+    a.href = '/Portfolio-Kris/md.html'
 }
 else if(screenSize >= 450){
-    a.href = '/sm.html'
+    a.href = '/Portfolio-Kris/sm.html'
 }
 
 setTimeout(() => {
